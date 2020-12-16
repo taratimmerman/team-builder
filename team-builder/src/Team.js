@@ -1,13 +1,17 @@
+import React from "react";
+
 export default function TeamList(props) {
     return(
-        <ul>
-            <li>Rick, Team lead, rick@heistcon.com</li>
-            <li>Truckula, Transportation, truckula@heistcon.com</li>
-            <li>Glar, Muscle, glar@heistcon.com</li>
-            <li>Angie Flint, Codebreaker, angie@heistcon.com</li>
-            {props.TeamList.map(team => {
-                return <li>{team.name}, {team.role}, {team.email}</li>
-            })}
-        </ul>
+        <div>
+            <ul>
+                <li>Rick, rick@heistcon.com, Team lead</li>
+                <li>Truckula, truckula@heistcon.com, Transportation</li>
+                <li>Glar, glar@heistcon.com, Muscle</li>
+                <li>Angie Flint, angie@heistcon.com, Codebreaker</li>
+                {props.TeamList.map(team => {
+                    return <li>{team.name}, {team.email}, {team.role}</li>
+                })}
+            </ul>
+        </div>
     )
 }
