@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(260deg, #9AE1E2 0%, #332851 100%);
+}
+
+.App {
+  background:rgba(255,255,255,0.2);
+  margin:20px;
+  padding:20px;
+  border-radius: 4px;
+  text-align: center;
+
+  flex:1;
+  display:flex;
+  flex-wrap:wrap;
+  max-width:60%;
+  margin: auto;
+  display:flex; 
+  justify-content: center;
+  align-items:center;
+  padding: 10%;
+}
+
+ul {
+  margin: 0;
+  padding: 2%;
+  list-style: none;
+}
+
+ul li {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+ul li:last-child {
+  border-bottom: 0;
+}
+
+button {
+  text-decoration: none;
+  background:#F6C667;
+  padding:10px;
+  color:black;
+  border-radius:4px;
+
+  align-self:flex-end;
+
+}
+
+h1 {
+  text-transform: uppercase;
+  color:white;
+  letter-spacing: 2px;
+  text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+}
+
+input {
+  margin: 0 auto;
+  display:flex; 
+  align-items:center;
+}
